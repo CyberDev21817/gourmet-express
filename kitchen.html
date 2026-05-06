@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDS - Kitchen Display System</title>
+    <link rel="stylesheet" href="kitchen-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-th-large"></i>
+                <span>KITCHEN DISPLAY SYSTEM</span>
+            </div>
+            <nav>
+                <a href="#" class="active"><i class="fas fa-columns"></i> Dashboard</a>
+                <a href="#"><i class="fas fa-utensils"></i> Menu Management</a>
+                <a href="#"><i class="fas fa-chart-bar"></i> Reports</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <h2>NEW ORDERS</h2>
+                <div class="user-profile">
+                    <i class="far fa-bell"></i>
+                    <div class="avatar"></div>
+                </div>
+            </header>
+
+            <div class="kanban-board">
+                <!-- Column 1: New -->
+                <div class="column new">
+                    <div class="column-header">NEW</div>
+                    <div id="new-orders" class="order-list"></div>
+                </div>
+
+                <!-- Column 2: Preparing -->
+                <div class="column preparing">
+                    <div class="column-header">PREPARING</div>
+                    <div id="preparing-orders" class="order-list"></div>
+                </div>
+
+                <!-- Column 3: Ready -->
+                <div class="column ready">
+                    <div class="column-header">READY</div>
+                    <div id="ready-orders" class="order-list"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="kitchen.js"></script>
+</body>
+</html>
